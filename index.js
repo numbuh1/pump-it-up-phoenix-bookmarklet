@@ -149,11 +149,11 @@ const expert_titles = [
 	},
 	{
 		name: 'ADVANCED Lv.6',
-		description: '[Lv.21] 35,000 rating',
+		description: '[Lv.21] 45,000 rating',
 		tier: 'silver',
 		type: 'rating',
 		level: '21',
-		rating: '35000'
+		rating: '45000'
 	},
 	{
 		name: 'ADVANCED Lv.5',
@@ -275,6 +275,858 @@ const expert_titles = [
 		level: '10',
 		rating: '2000'
 	},
+	{
+		name: 'SPECIALIST',
+		description: 'All skill titles',
+		tier: 'platinum',
+		type: 'skill_collect',
+		collect_type: 'skill',
+		count: 60
+	},
+	{
+		name: '[BRACKET] EXPERT',
+		description: 'All Bracket titles',
+		tier: 'platinum',
+		type: 'skill_collect',
+		collect_type: 'bracket',
+		count: 10
+	},
+	{
+		name: '[BRACKET] Lv.10',
+		description: 'Phalanx D24',
+		tier: 'platinum',
+		type: 'skill',
+		collect_type: 'bracket',
+		song: 'Phalanx',
+		diff: 'D24'
+	},
+	{
+		name: '[BRACKET] Lv.9',
+		description: 'Scorpion King D23',
+		tier: 'platinum',
+		type: 'skill',
+		collect_type: 'bracket',
+		song: 'Scorpion King',
+		diff: 'D23'
+	},
+	{
+		name: '[BRACKET] Lv.8',
+		description: 'Pop Sequence D23',
+		tier: 'gold',
+		type: 'skill',
+		collect_type: 'bracket',
+		song: 'Pop Sequence',
+		diff: 'D23'
+	},
+	{
+		name: '[BRACKET] Lv.7',
+		description: 'What Happened D23',
+		tier: 'gold',
+		type: 'skill',
+		collect_type: 'bracket',
+		song: 'What Happened',
+		diff: 'D23'
+	},
+	{
+		name: '[BRACKET] Lv.6',
+		description: 'Meteo5cience D22',
+		tier: 'silver',
+		type: 'skill',
+		collect_type: 'bracket',
+		song: 'Meteo5cience',
+		diff: 'D22'
+	},
+	{
+		name: '[BRACKET] Lv.5',
+		description: 'Phalanx S22',
+		tier: 'silver',
+		type: 'skill',
+		collect_type: 'bracket',
+		song: 'Phalanx',
+		diff: 'S22'
+	},
+	{
+		name: '[BRACKET] Lv.4',
+		description: 'What Happened S21',
+		tier: 'silver',
+		type: 'skill',
+		collect_type: 'bracket',
+		song: 'What Happened',
+		diff: 'S21'
+	},
+	{
+		name: '[BRACKET] Lv.3',
+		description: 'Meteo5cience D21',
+		tier: 'bronze',
+		type: 'skill',
+		collect_type: 'bracket',
+		song: 'Meteo5cience',
+		diff: 'D21'
+	},
+	{
+		name: '[BRACKET] Lv.2',
+		description: 'Mad5cience S20',
+		tier: 'bronze',
+		type: 'skill',
+		collect_type: 'bracket',
+		song: 'Mad5cience',
+		diff: 'S20'
+	},
+	{
+		name: '[BRACKET] Lv.1',
+		description: 'Allegro furioso D20',
+		tier: 'bronze',
+		type: 'skill',
+		collect_type: 'bracket',
+		song: 'Allegro furioso',
+		diff: 'D20'
+	},
+	{
+		name: '[HALF] EXPERT',
+		description: 'All Half titles',
+		tier: 'platinum',
+		type: 'skill_collect',
+		collect_type: 'half',
+		count: 10
+	},
+	{
+		name: '[HALF] Lv.10',
+		description: 'Imprinting D24',
+		tier: 'platinum',
+		type: 'skill',
+		collect_type: 'half',
+		song: 'Imprinting',
+		diff: 'D24'
+	},
+	{
+		name: '[HALF] Lv.9',
+		description: 'Love is a Danger Zone 2 Try To B.P.M D23',
+		tier: 'platinum',
+		type: 'skill',
+		collect_type: 'half',
+		song: 'Love is a Danger Zone 2 Try To B.P.M',
+		diff: 'D23'
+	},
+	{
+		name: '[HALF] Lv.8',
+		description: 'Redline D22',
+		tier: 'gold',
+		type: 'skill',
+		collect_type: 'half',
+		song: 'Redline',
+		diff: 'D22'
+	},
+	{
+		name: '[HALF] Lv.7',
+		description: 'Witch Doctor #1 D21',
+		tier: 'gold',
+		type: 'skill',
+		collect_type: 'half',
+		song: 'Witch Doctor #1',
+		diff: 'D21'
+	},
+	{
+		name: '[HALF] Lv.6',
+		description: 'Utsushiyo No Kaze D20',
+		tier: 'silver',
+		type: 'skill',
+		collect_type: 'half',
+		song: 'Utsushiyo No Kaze',
+		diff: 'D20'
+	},
+	{
+		name: '[HALF] Lv.5',
+		description: 'Phantom D19',
+		tier: 'silver',
+		type: 'skill',
+		collect_type: 'half',
+		song: 'Phantom',
+		diff: 'D19'
+	},
+	{
+		name: '[HALF] Lv.4',
+		description: 'Super Fantasy D18',
+		tier: 'silver',
+		type: 'skill',
+		collect_type: 'half',
+		song: 'Super Fantasy',
+		diff: 'D18'
+	},
+	{
+		name: '[HALF] Lv.3',
+		description: 'Shub Niggurath D18',
+		tier: 'bronze',
+		type: 'skill',
+		collect_type: 'half',
+		song: 'Shub Niggurath',
+		diff: 'D18'
+	},
+	{
+		name: '[HALF] Lv.2',
+		description: 'Butterfly D17',
+		tier: 'bronze',
+		type: 'skill',
+		collect_type: 'half',
+		song: 'Butterfly',
+		diff: 'D17'
+	},
+	{
+		name: '[HALF] Lv.1',
+		description: 'Mopemope D17',
+		tier: 'bronze',
+		type: 'skill',
+		collect_type: 'half',
+		song: 'Mopemope',
+		diff: 'D17'
+	},
+	{
+		name: '[GIMMICK] EXPERT',
+		description: 'All Gimmick titles',
+		tier: 'platinum',
+		type: 'skill_collect',
+		collect_type: 'gimmick',
+		count: 10
+	},
+	{
+		name: '[GIMMICK] Lv.10',
+		description: 'Everybody Got 2 Know S21',
+		tier: 'platinum',
+		type: 'skill',
+		collect_type: 'gimmick',
+		song: 'Everybody Got 2 Know',
+		diff: 'S21'
+	},
+	{
+		name: '[GIMMICK] Lv.9',
+		description: '8 6 S20',
+		tier: 'platinum',
+		type: 'skill',
+		collect_type: 'gimmick',
+		song: '8 6',
+		diff: 'S20'
+	},
+	{
+		name: '[GIMMICK] Lv.8',
+		description: 'Twist of Fate (feat. Ruriling) S19',
+		tier: 'gold',
+		type: 'skill',
+		collect_type: 'gimmick',
+		song: 'Twist of Fate (feat. Ruriling)',
+		diff: 'S19'
+	},
+	{
+		name: '[GIMMICK] Lv.7',
+		description: 'Nakakapagpabagabag S19',
+		tier: 'gold',
+		type: 'skill',
+		collect_type: 'gimmick',
+		song: 'Nakakapagpabagabag',
+		diff: 'S19'
+	},
+	{
+		name: '[GIMMICK] Lv.6',
+		description: 'Miss S\' story S19',
+		tier: 'silver',
+		type: 'skill',
+		collect_type: 'gimmick',
+		song: 'Miss S\' story',
+		diff: 'S19'
+	},
+	{
+		name: '[GIMMICK] Lv.5',
+		description: 'Rock the house - SHORT CUT - S18',
+		tier: 'silver',
+		type: 'skill',
+		collect_type: 'gimmick',
+		song: 'Rock the house - SHORT CUT -',
+		diff: 'S18'
+	},
+	{
+		name: '[GIMMICK] Lv.4',
+		description: 'Come to Me S17',
+		tier: 'silver',
+		type: 'skill',
+		collect_type: 'gimmick',
+		song: 'Come to Me',
+		diff: 'S17'
+	},
+	{
+		name: '[GIMMICK] Lv.3',
+		description: 'Ugly Dee S17',
+		tier: 'bronze',
+		type: 'skill',
+		collect_type: 'gimmick',
+		song: 'Ugly Dee',
+		diff: 'S17'
+	},
+	{
+		name: '[GIMMICK] Lv.2',
+		description: '8 6 S16',
+		tier: 'bronze',
+		type: 'skill',
+		collect_type: 'gimmick',
+		song: '8 6',
+		diff: 'S16'
+	},
+	{
+		name: '[GIMMICK] Lv.1',
+		description: 'Yeo rae a S13',
+		tier: 'bronze',
+		type: 'skill',
+		collect_type: 'gimmick',
+		song: 'Yeo rae a',
+		diff: 'S13'
+	},
+	{
+		name: '[DRILL] EXPERT',
+		description: 'All Drill titles',
+		tier: 'platinum',
+		type: 'skill_collect',
+		collect_type: 'drill',
+		count: 10
+	},
+	{
+		name: '[DRILL] Lv.10',
+		description: 'WI-EX-DOC-VA D24',
+		tier: 'platinum',
+		type: 'skill',
+		collect_type: 'drill',
+		song: 'WI-EX-DOC-VA',
+		diff: 'D24'
+	},
+	{
+		name: '[DRILL] Lv.9',
+		description: 'Witch Doctor D23',
+		tier: 'platinum',
+		type: 'skill',
+		collect_type: 'drill',
+		song: 'Witch Doctor',
+		diff: 'D23'
+	},
+	{
+		name: '[DRILL] Lv.8',
+		description: 'Rock the house D22',
+		tier: 'gold',
+		type: 'skill',
+		collect_type: 'drill',
+		song: 'Rock the house',
+		diff: 'D22'
+	},
+	{
+		name: '[DRILL] Lv.7',
+		description: 'Sorceress Elise S21',
+		tier: 'gold',
+		type: 'skill',
+		collect_type: 'drill',
+		song: 'Sorceress Elise',
+		diff: 'S21'
+	},
+	{
+		name: '[DRILL] Lv.6',
+		description: 'Overblow S20',
+		tier: 'silver',
+		type: 'skill',
+		collect_type: 'drill',
+		song: 'Overblow',
+		diff: 'S20'
+	},
+	{
+		name: '[DRILL] Lv.5',
+		description: 'Vacuum S19',
+		tier: 'silver',
+		type: 'skill',
+		collect_type: 'drill',
+		song: 'Vacuum',
+		diff: 'S19'
+	},
+	{
+		name: '[DRILL] Lv.4',
+		description: 'Moonlight S18',
+		tier: 'silver',
+		type: 'skill',
+		collect_type: 'drill',
+		song: 'Moonlight',
+		diff: 'S18'
+	},
+	{
+		name: '[DRILL] Lv.3',
+		description: 'Gun Rock S17',
+		tier: 'bronze',
+		type: 'skill',
+		collect_type: 'drill',
+		song: 'Gun Rock',
+		diff: 'S17'
+	},
+	{
+		name: '[DRILL] Lv.2',
+		description: 'Vook S16',
+		tier: 'bronze',
+		type: 'skill',
+		collect_type: 'drill',
+		song: 'Vook',
+		diff: 'S16'
+	},
+	{
+		name: '[DRILL] Lv.1',
+		description: 'Hellfire S13',
+		tier: 'bronze',
+		type: 'skill',
+		collect_type: 'drill',
+		song: 'Hellfire',
+		diff: 'S13'
+	},
+	{
+		name: '[RUN] EXPERT',
+		description: 'All Run titles',
+		tier: 'platinum',
+		type: 'skill_collect',
+		collect_type: 'run',
+		count: 10
+	},
+	{
+		name: '[RUN] Lv.10',
+		description: 'Yog-Sothoth D24',
+		tier: 'platinum',
+		type: 'skill',
+		collect_type: 'run',
+		song: 'Yog-Sothoth',
+		diff: 'D24'
+	},
+	{
+		name: '[RUN] Lv.9',
+		description: 'Baroque Virus - FULL SONG - D23',
+		tier: 'platinum',
+		type: 'skill',
+		collect_type: 'run',
+		song: 'Baroque Virus - FULL SONG -',
+		diff: 'D23'
+	},
+	{
+		name: '[RUN] Lv.8',
+		description: 'Gargoyle - FULL SONG - D22',
+		tier: 'gold',
+		type: 'skill',
+		collect_type: 'run',
+		song: 'Gargoyle - FULL SONG -',
+		diff: 'D22'
+	},
+	{
+		name: '[RUN] Lv.7',
+		description: 'Sarabande D21',
+		tier: 'gold',
+		type: 'skill',
+		collect_type: 'run',
+		song: 'Sarabande',
+		diff: 'D21'
+	},
+	{
+		name: '[RUN] Lv.6',
+		description: 'Bee D20',
+		tier: 'silver',
+		type: 'skill',
+		collect_type: 'run',
+		song: 'Bee',
+		diff: 'D20'
+	},
+	{
+		name: '[RUN] Lv.5',
+		description: 'Napalm S19',
+		tier: 'silver',
+		type: 'skill',
+		collect_type: 'run',
+		song: 'Napalm',
+		diff: 'S19'
+	},
+	{
+		name: '[RUN] Lv.4',
+		description: 'Gothique Resonance S18',
+		tier: 'silver',
+		type: 'skill',
+		collect_type: 'run',
+		song: 'Gothique Resonance',
+		diff: 'S18'
+	},
+	{
+		name: '[RUN] Lv.3',
+		description: 'Pavane S17',
+		tier: 'bronze',
+		type: 'skill',
+		collect_type: 'run',
+		song: 'Pavane',
+		diff: 'S17'
+	},
+	{
+		name: '[RUN] Lv.2',
+		description: 'Super Fantasy S16',
+		tier: 'bronze',
+		type: 'skill',
+		collect_type: 'run',
+		song: 'Super Fantasy',
+		diff: 'S16'
+	},
+	{
+		name: '[RUN] Lv.1',
+		description: 'Switronic S13',
+		tier: 'bronze',
+		type: 'skill',
+		collect_type: 'run',
+		song: 'Switronic',
+		diff: 'S13'
+	},
+	{
+		name: '[TWIST] EXPERT',
+		description: 'All Twist titles',
+		tier: 'platinum',
+		type: 'skill_collect',
+		collect_type: 'twist',
+		count: 10
+	},
+	{
+		name: '[TWIST] Lv.10',
+		description: 'Bee D24',
+		tier: 'platinum',
+		type: 'skill',
+		collect_type: 'twist',
+		song: 'Bee',
+		diff: 'D24'
+	},
+	{
+		name: '[TWIST] Lv.9',
+		description: 'Love Is A Danger Zone(Cranky Mix) D23',
+		tier: 'platinum',
+		type: 'skill',
+		collect_type: 'twist',
+		song: 'Love Is A Danger Zone(Cranky Mix)',
+		diff: 'D23'
+	},
+	{
+		name: '[TWIST] Lv.8',
+		description: 'Super Fantasy D22',
+		tier: 'gold',
+		type: 'skill',
+		collect_type: 'twist',
+		song: 'Super Fantasy',
+		diff: 'D22'
+	},
+	{
+		name: '[TWIST] Lv.7',
+		description: 'Love is a Danger Zone D21',
+		tier: 'gold',
+		type: 'skill',
+		collect_type: 'twist',
+		song: 'Love is a Danger Zone',
+		diff: 'D21'
+	},
+	{
+		name: '[TWIST] Lv.6',
+		description: 'Witch Doctor #1 D20',
+		tier: 'silver',
+		type: 'skill',
+		collect_type: 'twist',
+		song: 'Witch Doctor #1',
+		diff: 'D20'
+	},
+	{
+		name: '[TWIST] Lv.5',
+		description: 'U GOT 2 KNOW S19',
+		tier: 'silver',
+		type: 'skill',
+		collect_type: 'twist',
+		song: 'U GOT 2 KNOW',
+		diff: 'S19'
+	},
+	{
+		name: '[TWIST] Lv.4',
+		description: 'Solitary 2 S18',
+		tier: 'silver',
+		type: 'skill',
+		collect_type: 'twist',
+		song: 'Solitary 2',
+		diff: 'S18'
+	},
+	{
+		name: '[TWIST] Lv.3',
+		description: 'U Got Me Rocking S17',
+		tier: 'bronze',
+		type: 'skill',
+		collect_type: 'twist',
+		song: 'U Got Me Rocking',
+		diff: 'S17'
+	},
+	{
+		name: '[TWIST] Lv.2',
+		description: 'Street show down S16',
+		tier: 'bronze',
+		type: 'skill',
+		collect_type: 'twist',
+		song: 'Street show down',
+		diff: 'S16'
+	},
+	{
+		name: '[TWIST] Lv.1',
+		description: 'Scorpion King S13',
+		tier: 'bronze',
+		type: 'skill',
+		collect_type: 'twist',
+		song: 'Scorpion King',
+		diff: 'S13'
+	},
+	{
+		name: '[XX] Double',
+		description: '1949 D28',
+		tier: 'platinum',
+		type: 'boss',
+		song: '1949',
+		diff: 'D28'
+	},
+	{
+		name: '[XX] Single',
+		description: 'ERRORCODE: 0 S25',
+		tier: 'gold',
+		type: 'boss',
+		song: 'ERRORCODE: 0',
+		diff: 'S25'
+	},
+	{
+		name: '[PRIME2] Double',
+		description: 'Shub Sothoth D27',
+		tier: 'platinum',
+		type: 'boss',
+		song: 'Shub Sothoth',
+		diff: 'D27'
+	},
+	{
+		name: '[PRIME2] Single',
+		description: 'Shub Sothoth S25',
+		tier: 'gold',
+		type: 'boss',
+		song: 'Shub Sothoth',
+		diff: 'S25'
+	},
+	{
+		name: '[PRIME] Double',
+		description: 'Paradoxx D28',
+		tier: 'platinum',
+		type: 'boss',
+		song: 'Paradoxx',
+		diff: 'D28'
+	},
+	{
+		name: '[PRIME] Single',
+		description: 'Paradoxx S26',
+		tier: 'gold',
+		type: 'boss',
+		song: 'Paradoxx',
+		diff: 'S26'
+	},
+	{
+		name: '[FIESTA2] Double',
+		description: 'Ignis Fatuus D25',
+		tier: 'gold',
+		type: 'boss',
+		song: 'Ignis Fatuus',
+		diff: 'D25'
+	},
+	{
+		name: '[FIESTA2] Single',
+		description: 'Ignis Fatuus S22',
+		tier: 'silver',
+		type: 'boss',
+		song: 'Ignis Fatuus',
+		diff: 'S22'
+	},
+	{
+		name: '[FIESTA EX] Double',
+		description: 'Vacuum Cleaner D26',
+		tier: 'gold',
+		type: 'boss',
+		song: 'Vacuum Cleaner',
+		diff: 'D26'
+	},
+	{
+		name: '[FIESTA EX] Single',
+		description: 'Vacuum Cleaner S25',
+		tier: 'gold',
+		type: 'boss',
+		song: 'Vacuum Cleaner',
+		diff: 'S25'
+	},
+	{
+		name: '[FIESTA] Double',
+		description: 'Vacuum D25',
+		tier: 'gold',
+		type: 'boss',
+		song: 'Vacuum',
+		diff: 'D25'
+	},
+	{
+		name: '[FIESTA] Single',
+		description: 'Vacuum S23',
+		tier: 'silver',
+		type: 'boss',
+		song: 'Vacuum',
+		diff: 'S23'
+	},
+	{
+		name: '[NXA] Double',
+		description: 'Final Audition Ep. 2-X D24',
+		tier: 'gold',
+		type: 'boss',
+		song: 'Final Audition Ep. 2-X',
+		diff: 'D24'
+	},
+	{
+		name: '[NXA] Single',
+		description: 'Final Audition Ep. 2-X S23',
+		tier: 'silver',
+		type: 'boss',
+		song: 'Final Audition Ep. 2-X',
+		diff: 'S23'
+	},
+	{
+		name: '[NX2] Double',
+		description: 'Banya-P Guitar Remix D24',
+		tier: 'gold',
+		type: 'boss',
+		song: 'Banya-P Guitar Remix',
+		diff: 'D24'
+	},
+	{
+		name: '[NX2] Single',
+		description: 'Banya-P Guitar Remix S22',
+		tier: 'silver',
+		type: 'boss',
+		song: 'Banya-P Guitar Remix',
+		diff: 'S22'
+	},
+	{
+		name: '[NX] Double',
+		description: 'Bemera D26',
+		tier: 'gold',
+		type: 'boss',
+		song: 'Bemera',
+		diff: 'D26'
+	},
+	{
+		name: '[NX] Single',
+		description: 'Bemera S24',
+		tier: 'silver',
+		type: 'boss',
+		song: 'Bemera',
+		diff: 'S24'
+	},
+	{
+		name: '[ZERO] Double',
+		description: 'Love is a Danger Zone pt. 2 D24',
+		tier: 'silver',
+		type: 'boss',
+		song: 'Love is a Danger Zone pt. 2',
+		diff: 'D24'
+	},
+	{
+		name: '[ZERO] Single',
+		description: 'Love is a Danger Zone pt. 2 S22',
+		tier: 'silver',
+		type: 'boss',
+		song: 'Love is a Danger Zone pt. 2',
+		diff: 'S22'
+	},
+	{
+		name: '[EXCEED2] Double',
+		description: 'Canon D D23',
+		tier: 'silver',
+		type: 'boss',
+		song: 'Canon D',
+		diff: 'D23'
+	},
+	{
+		name: '[EXCEED2] Single',
+		description: 'Canon D S20',
+		tier: 'silver',
+		type: 'boss',
+		song: 'Canon D',
+		diff: 'S20'
+	},
+	{
+		name: '[EXCEED] Double',
+		description: 'Dignity D24',
+		tier: 'gold',
+		type: 'boss',
+		song: 'Dignity',
+		diff: 'D24'
+	},
+	{
+		name: '[EXCEED] Single',
+		description: 'Dignity S21',
+		tier: 'silver',
+		type: 'boss',
+		song: 'Dignity',
+		diff: 'S21'
+	},
+	{
+		name: '[THE PREX3]',
+		description: 'Bee S17',
+		tier: 'bronze',
+		type: 'boss',
+		song: 'Bee',
+		diff: 'S17'
+	},
+	{
+		name: '[THE REBIRTH]',
+		description: 'Love is a Danger Zone S17',
+		tier: 'bronze',
+		type: 'boss',
+		song: 'Love is a Danger Zone',
+		diff: 'S17'
+	},
+	{
+		name: '[EXTRA]',
+		description: 'Radetzky Can Can D18',
+		tier: 'bronze',
+		type: 'boss',
+		song: 'Radetzky Can Can',
+		diff: 'D18'
+	},
+	{
+		name: '[Perfect Collection]',
+		description: 'Slam S18',
+		tier: 'bronze',
+		type: 'boss',
+		song: 'Slam',
+		diff: 'S18'
+	},
+	{
+		name: '[The O.B.G SE]',
+		description: 'Mr. Larpus S15',
+		tier: 'bronze',
+		type: 'boss',
+		song: 'Mr. Larpus',
+		diff: 'S15'
+	},
+	{
+		name: '[The O.B.G]',
+		description: 'Turkey March S12',
+		tier: 'bronze',
+		type: 'boss',
+		song: 'Turkey March',
+		diff: 'S12'
+	},
+	{
+		name: '[The 2nd]',
+		description: 'Extravaganza S11',
+		tier: 'bronze',
+		type: 'boss',
+		song: 'Extravaganza',
+		diff: 'S11'
+	},
+	{
+		name: '[The 1st]',
+		description: 'Another Truth S6',
+		tier: 'bronze',
+		type: 'boss',
+		song: 'Another Truth',
+		diff: 'S6'
+	},
 ];
 
 fetchAllScores();
@@ -341,23 +1193,60 @@ function createAnalytic(scores) {
 	console.log("Run Analytics");
 	
 	$('.pageWrap').prepend('<div id="table_pane" class="row"><div id="table_pane_body" class="col-md-6"><table id="main_table" class="table table-dark table-striped"></table></div></div>');
-	$('#main_table').append('<thead class="thead-dark"><tr><th width="30">#</th><th>Song</th><th width="100">Diff</th><th width="100">Score</th><th width="50">Rank</th><th width="70">Rating</th></tr></thead>');		
+	$('#main_table').append('<thead class="thead-dark"><tr><th width="30">#</th><th>Song</th><th width="50">Diff</th><th width="100">Score</th><th width="50">Rank</th><th width="70">Rating</th></tr></thead>');		
 	$('#main_table').css('');
 	$('#main_table').append('<tbody id="main_table_body"><tbody>');
 
 	for (var i = 0; i < scores.length; i++) {
+		switch(scores[i].level_type) {
+		  	case 'single':
+			    level_style = 'style="font-weight: bolder; color: orangered;"';
+			    break;
+		  	case 'double':
+			    level_style = 'style="font-weight: bolder; color: lawngreen;"';
+			    break;
+		  	case 'coop':
+		    	level_style = 'style="font-weight: bolder; color: yellow;"';
+		    	break;
+		    default:
+		    	level_style = '';
+		}
+		switch(scores[i].score_rate) {
+		  	case 'sss_p':
+		  	case 'sss':
+			    score_style = 'style="font-weight: bolder; color: cyan;"';
+			    break;
+		  	case 'ss_p':
+		  	case 'ss':
+		  	case 's_p':
+		  	case 's':
+			    score_style = 'style="font-weight: bolder; color: gold;"';
+			    break;
+		  	case 'aaa_p':
+		  	case 'aaa':
+		    	score_style = 'style="font-weight: bolder; color: silver;"';
+		    	break;
+		    case 'aa_p':
+		    case 'aa':
+		    case 'a_p':
+		    case 'a':
+		    	score_style = 'style="font-weight: bolder; color: orangered;"';
+		    	break;
+		    default:
+		    	score_style = 'style="font-weight: bolder; color: greenyellow;"';
+		}
 		$('#main_table_body').append('<tr>' +
 			'<td>' + (i+1) + '</td>' +
 			'<td>' + scores[i].name + '</td>' +
-			'<td>' + scores[i].level_text + '</td>' +
+			'<td ' + level_style + '>' + scores[i].level_text + '</td>' +
 			'<td>' + scores[i].score_text + '</td>' +
-			'<td>' + scores[i].score_rate_text + '</td>' +
+			'<td ' + score_style + '>' + scores[i].score_rate_text + '</td>' +
 			'<td>' + scores[i].rating + '</td>');		
 	}
 
 
 	$('#table_pane').append('<div id="table_pane_progress" class="col-md-6"><table id="progress_table" class="table table-dark table-striped"></table></div>');
-	$('#progress_table').append('<thead class="thead-dark"><tr><th width="170">Title</th><th width="180">Description</th><th>Progress</th></tr></thead>');
+	$('#progress_table').append('<thead class="thead-dark"><tr><th width="180">Title</th><th width="180">Description</th><th>Progress</th></tr></thead>');
 	$('#progress_table').append('<tbody id="progress_table_body"><tbody>');
 
 	var level_progress = [];
@@ -375,26 +1264,120 @@ function createAnalytic(scores) {
 		level_progress[level_progress_list[i].diff] = level_progress_list[i].rating;
 	}
 
-
 	for (var i = 0; i < expert_titles.length; i++) {
+		switch(expert_titles[i].tier) {
+		  	case 'platinum':
+			    title_style = 'style="font-weight: bolder; color: cyan;"';
+			    break;
+		  	case 'gold':
+			    title_style = 'style="font-weight: bolder; color: gold;"';
+			    break;
+		  	case 'silver':
+		    	title_style = 'style="font-weight: bolder; color: silver;"';
+		    	break;
+		    case 'bronze':
+		    	title_style = 'style="font-weight: bolder; color: orangered;"';
+		    	break;
+		    default:
+		    	title_style = '';
+		}
 		switch(expert_titles[i].type) {
 		  	case 'rating':
 		  		current_level = expert_titles[i].level;
 		  		current_rating = level_progress[current_level] ? level_progress[current_level] : 0;
 		  		max_rating = parseInt(expert_titles[i].rating);
 		  		progress = Math.round((current_rating / max_rating) * 100);
+		  		if(progress >= 100) {
+					bar_bg = 'bg-success';
+				} else {
+					bar_bg = 'bg-danger';
+				}
 		  		$('#progress_table_body').append('<tr>' +
-					'<td>' + expert_titles[i].name + '</td>' +
+					'<td ' + title_style + '>' + expert_titles[i].name + '</td>' +
 					'<td>' + expert_titles[i].description + '</td>' +
 					'<td><div class="progress" style="position: relative;">' +
-						'<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"' +
+						'<div class="progress-bar ' + bar_bg + ' progress-bar-striped progress-bar-animated" role="progressbar"' +
 							'aria-valuenow="' + current_rating + '" aria-valuemin="0" aria-valuemax="' + max_rating + '" style="width: ' + progress + '%"></div>' +
 						'<div style="position: absolute; text-align: center; line-height: 20px; overflow: hidden; color: black; right: 0; left: 0; top: 0;">' + current_rating.toLocaleString() + '/' + max_rating.toLocaleString() + '</div>' +
-					'</div></td>');	
+					'</div></td></tr>');
 			    break;
+			case 'skill_collect':
+				$('#progress_table_body').append('<tr>' +
+					'<td ' + title_style + '>' + expert_titles[i].name + '</td>' +
+					'<td>' + expert_titles[i].description + '</td>' +
+					'<td><div class="progress" style="position: relative;">' +
+						'<div id="progress_bar_' + expert_titles[i].collect_type + '" class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar"' +
+							'aria-valuenow="0" aria-valuemin="0" aria-valuemax="' + expert_titles[i].count + '" style="width: 0%"></div>' +
+						'<div id="progress_bar_' + expert_titles[i].collect_type + '_text" style="position: absolute; text-align: center; line-height: 20px; overflow: hidden; color: black; right: 0; left: 0; top: 0;">0/' + expert_titles[i].count + '</div>' +
+					'</div></td><tr><input type="hidden" id="skill_count_' + expert_titles[i].collect_type + '" value="0">');
+				break;
+			case 'skill':
+				current_song = scores.find(o => o.name === expert_titles[i].song && o.level_text === expert_titles[i].diff);
+				if(current_song == undefined) {
+					current_song_score = 0;
+					score_text = 0;
+				} else {
+					current_song_score = current_song.score;
+					score_text = current_song.score_text;
+				}
+				progress = Math.round(parseInt(current_song_score) / 1000000 * 100);
+				if(current_song_score > 990000) {
+					bar_bg = 'bg-success';
+
+					skill_count = parseInt($('#skill_count_skill').val()) + 1;
+					$('#skill_count_skill').val(skill_count);
+					$('#progress_bar_skill').css('width', skill_count/60*100 + '%');
+					$('#progress_bar_skill_text').html(skill_count + '/60');
+					if(skill_count == 60) {
+						$('#progress_bar_skill').removeClass('bg-danger');
+						$('#progress_bar_skill').addClass('bg-success');
+					}
+
+
+					sub_skill_count = parseInt($('#skill_count_' + expert_titles[i].collect_type).val()) + 1;
+					$('#skill_count_' + expert_titles[i].collect_type).val(sub_skill_count);
+					$('#progress_bar_' + expert_titles[i].collect_type).css('width', sub_skill_count/10*100 + '%');
+					$('#progress_bar_' + expert_titles[i].collect_type + '_text').html(sub_skill_count + '/10');
+					if(sub_skill_count == 10) {
+						$('#progress_bar_' + expert_titles[i].collect_type).removeClass('bg-danger');
+						$('#progress_bar_' + expert_titles[i].collect_type).addClass('bg-success');
+					}
+				} else {
+					bar_bg = 'bg-danger';
+				}
+				$('#progress_table_body').append('<tr>' +
+					'<td ' + title_style + '>' + expert_titles[i].name + '</td>' +
+					'<td>' + expert_titles[i].description + '</td>' +
+					'<td><div class="progress" style="position: relative;">' +
+						'<div class="progress-bar ' + bar_bg + ' progress-bar-striped progress-bar-animated" role="progressbar"' +
+							'aria-valuenow="' + current_song_score + '" aria-valuemin="0" aria-valuemax="1000000" style="width: ' + progress + '%"></div>' +
+						'<div style="position: absolute; text-align: center; line-height: 20px; overflow: hidden; color: black; right: 0; left: 0; top: 0;">' + score_text + '/1,000,000</div>' +
+					'</div></td>');
+				break;
+			case 'boss':
+				current_song = scores.find(o => o.name === expert_titles[i].song && o.level_text === expert_titles[i].diff);
+				if(current_song == undefined) {
+					current_song_score = 0;
+					score_text = 0;
+					bar_bg = 'bg-danger';
+				} else {
+					current_song_score = current_song.score;
+					score_text = current_song.score_text;
+					bar_bg = 'bg-success';
+				}
+				progress = Math.round(parseInt(current_song_score) / 1000000 * 100);
+				$('#progress_table_body').append('<tr>' +
+					'<td ' + title_style + '>' + expert_titles[i].name + '</td>' +
+					'<td>' + expert_titles[i].description + '</td>' +
+					'<td><div class="progress" style="position: relative;">' +
+						'<div class="progress-bar ' + bar_bg + ' progress-bar-striped progress-bar-animated" role="progressbar"' +
+							'aria-valuenow="' + current_song_score + '" aria-valuemin="0" aria-valuemax="1000000" style="width: ' + progress + '%"></div>' +
+						'<div style="position: absolute; text-align: center; line-height: 20px; overflow: hidden; color: black; right: 0; left: 0; top: 0;">' + score_text + '/1,000,000</div>' +
+					'</div></td>');
+				break;
 		  	default:
 		    	continue;		    	
-		}		
+		}
 	}
 }
 
@@ -441,7 +1424,7 @@ async function fetchScores(url) {
 			    url = $(dom.querySelectorAll('.my_best_scoreList .in .stepBall_in')[i]).find('.imG img').eq(1).attr('src');
 				level = url.split('num_')[1].split('.png')[0];
 				rating = 0;
-				level_text = 'CO-OP X' + level;
+				level_text = 'Cx' + level;
 		}						
 
 		song = {
@@ -453,7 +1436,7 @@ async function fetchScores(url) {
     		score_plate_text: plate_text[score_plate],
     		level_type: level_type,
     		level: level,
-    		score: score.replace(',',''),
+    		score: score.replaceAll(',',''),
     		score_rate: score_rate,
     		score_plate: score_plate,
     	}
