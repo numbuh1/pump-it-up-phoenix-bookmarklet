@@ -521,6 +521,7 @@ function calculateRating(level, rate) {
 		'28':1810,
 	};
 
+	if(level < 10) return 0;
 	rating = parseInt(level_base[level]) * parseFloat(rate_index[rate]);
 	return Math.round(rating.toFixed(2));
 }
