@@ -277,6 +277,7 @@ const expert_titles = [
 	},
 ];
 
+fetchAllScores();
 	
 function fetchAllScores() {
 	let pages = parseInt($('.board_paging button:last').attr('onclick').split('=')[2].split('\'')[0]);
