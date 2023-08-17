@@ -280,9 +280,11 @@ const expert_titles = [
 fetchAllScores();
 	
 function fetchAllScores() {
+	let pages = parseInt($('.board_paging button:last').attr('onclick').split('=')[2].split('\'')[0]);
 	$('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css') );	
 	$('#contents').css('background', '#1a1b1e');
-	let pages = parseInt($('.board_paging button:last').attr('onclick').split('=')[2].split('\'')[0]);
+	$('#header').remove();
+	$('.pageWrap').html('');
 	showProgress(pages);
 	let scores = [];
 	let current_url = window.location.href;	
