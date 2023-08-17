@@ -280,7 +280,10 @@ const expert_titles = [
 fetchAllScores();
 	
 function fetchAllScores() {
+	$('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css') );	
+	$('#contents').css('background', '#1a1b1e');
 	let pages = parseInt($('.board_paging button:last').attr('onclick').split('=')[2].split('\'')[0]);
+	showProgress(pages);
 	let scores = [];
 	let current_url = window.location.href;	
 
@@ -293,10 +296,13 @@ function fetchAllScores() {
 		fetchScores(current_url + '&&page=' + i)
 			.then((score) => {
 				console.log(mark + '/' + pages);
+				$('#current_progress_page').html(mark);
+				$('#fetch_progress_bar').css('width', ((mark/pages)*100) + '%');
 				for (var j = score.length - 1; j >= 0; j--) {
 					scores.push(score[j])
 				}
 				if(mark == pages) {
+					$('#progress_pane').hide();
 					run(scores)
 				}
 				mark++;
@@ -321,13 +327,19 @@ function run(scores) {
 	createAnalytic(scores);
 }
 
+function showProgress(page) {
+	$('.pageWrap').prepend('<div id="progress_pane"><h1 style="color:white">Fetching scores:</h1><div id="fetch_progress" class="progress" style="height: 30px;"></div>');
+	$('#fetch_progress').append('<div id="fetch_progress_bar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" ' +
+		'aria-valuenow="0" aria-valuemin="0" aria-valuemax="' + page + '" style="width: 0%">'+
+		'<div style="position: absolute; text-align: center; line-height: 20px; overflow: hidden; color: black; right: 0; left: 0; top: 0;">'+
+		'<span style="font-size: 20px;"><span id="current_progress_page">0</span>/' + page + '</span></div></div>');
+}
+
 function createAnalytic(scores) {
 	console.log("Run Analytics");
-
-	$('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css') );	
+	
 	$('.pageWrap').prepend('<div id="table_pane" class="row"><div id="table_pane_body" class="col-md-6"><table id="main_table" class="table table-dark table-striped"></table></div></div>');
-	$('#main_table').append('<thead class="thead-dark"><tr><th width="30">#</th><th>Song</th><th width="100">Diff</th><th width="100">Score</th><th width="50">Rank</th><th width="70">Rating</th></tr></thead>');	
-	$('#contents').css('background', '#1a1b1e');
+	$('#main_table').append('<thead class="thead-dark"><tr><th width="30">#</th><th>Song</th><th width="100">Diff</th><th width="100">Score</th><th width="50">Rank</th><th width="70">Rating</th></tr></thead>');		
 	$('#main_table').css('');
 	$('#main_table').append('<tbody id="main_table_body"><tbody>');
 
