@@ -277,23 +277,34 @@ const expert_titles = [
 	},
 ];
 
-function runAnalyzePump() {
+	
+function fetchAllScores() {
 	let pages = parseInt($('.board_paging button:last').attr('onclick').split('=')[2].split('\'')[0]);
 	let scores = [];
-	let current_url = window.location.href;
+	let current_url = window.location.href;	
+
 	if(window.location.href.indexOf('?') == -1) {
 		current_url = current_url + '?';
 	}
 
+	let mark = 1;
 	for (var i = 1; i <= pages; i++) {
 		fetchScores(current_url + '&&page=' + i)
 			.then((score) => {
+				console.log(mark + '/' + pages);
 				for (var j = score.length - 1; j >= 0; j--) {
 					scores.push(score[j])
 				}
+				if(mark == pages) {
+					run(scores)
+				}
+				mark++;
 			});
 	}
+}
 
+
+function run(scores) {
 	scores.sort(function(a, b){
 	    var a1 = a.rating, b1 = b.rating;
 	    if(a1 == b1) {
@@ -306,13 +317,11 @@ function runAnalyzePump() {
 	    return a1 > b1 ? -1 : 1;
 	});
 
-	// let scores = [];
-	// fetchScores('https://piugame.com/my_page/my_best_score.php?&&page=4')
-	// 		.then((score) => {
-	// 			for (var j = score.length - 1; j >= 0; j--) {
-	// 				scores.push(score[j])
-	// 			}
-	// 		});
+	createAnalytic(scores);
+}
+
+function createAnalytic(scores) {
+	console.log("Run Analytics");
 
 	$('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css') );	
 	$('.pageWrap').prepend('<div id="table_pane" class="row"><div id="table_pane_body" class="col-md-6"><table id="main_table" class="table table-dark table-striped"></table></div></div>');
@@ -373,7 +382,6 @@ function runAnalyzePump() {
 		}		
 	}
 }
-
 
 async function fetchScores(url) {
 	dom = await fetchPage(url);
