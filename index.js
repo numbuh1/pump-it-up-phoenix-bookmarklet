@@ -1513,4 +1513,4 @@ javascript:void(
 			}
 		}
 	}
-)
+)(document)
