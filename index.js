@@ -1416,14 +1416,14 @@ async function fetchScores(url) {
 					url = $(dom.querySelectorAll('.my_best_scoreList .in .stepBall_in')[i]).find('.imG img').eq(j).attr('src');
 					level += url.split('num_')[1].split('.png')[0];
 				}
-				rating = calculateRating(level, rating_text[score_rate]);
+				rating = calculateRating(level, rating_text[score_rate], 'normal');
 				level_text = level_type_data + level;
 				level_text = level_text.toUpperCase();
 				break;
 			default:
 			    url = $(dom.querySelectorAll('.my_best_scoreList .in .stepBall_in')[i]).find('.imG img').eq(1).attr('src');
 				level = url.split('num_')[1].split('.png')[0];
-				rating = 0;
+				rating = calculateRating(null, rating_text[score_rate], 'coop');
 				level_text = 'Cx' + level;
 		}						
 
@@ -1466,7 +1466,7 @@ async function fetchPage(url) {
 	return parser.parseFromString(html, 'text/html');
 }
 
-function calculateRating(level, rate) {
+function calculateRating(level, rate, type) {
 	rate_index = {
 		'A':0.9,
 		'A+':0.95,
@@ -1482,29 +1482,33 @@ function calculateRating(level, rate) {
 		'SSS+':1.5,
 	};
 
-	level_base = {
-		'10':100,
-		'11':110,
-		'12':130,
-		'13':160,
-		'14':200,
-		'15':250,
-		'16':310,
-		'17':380,
-		'18':460,
-		'19':550,
-		'20':650,
-		'21':760,
-		'22':880,
-		'23':1010,
-		'24':1150,
-		'25':1300,
-		'26':1460,
-		'27':1630,
-		'28':1810,
-	};
-
-	if(level < 10) return 0;
-	rating = parseInt(level_base[level]) * parseFloat(rate_index[rate]);
+	if(type == 'normal') {
+		level_base = {
+			'10':100,
+			'11':110,
+			'12':130,
+			'13':160,
+			'14':200,
+			'15':250,
+			'16':310,
+			'17':380,
+			'18':460,
+			'19':550,
+			'20':650,
+			'21':760,
+			'22':880,
+			'23':1010,
+			'24':1150,
+			'25':1300,
+			'26':1460,
+			'27':1630,
+			'28':1810,
+		};
+		if(level < 10) return 0;
+		rating = parseInt(level_base[level]) * parseFloat(rate_index[rate]);
+	} else if(type == 'coop') {
+		level_base = 2000;
+		rating = parseInt(level_base) * parseFloat(rate_index[rate]);
+	}
 	return Math.round(rating.toFixed(2));
 }
